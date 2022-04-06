@@ -1,42 +1,59 @@
+/*------------
+    Reset
+-------------*/
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
+/*------------
+    Commons
+-------------*/
+
 body{
+    font-family: 'Montserrat', sans-serif;
     background-color: aqua;
 }
-
 .container{
     display: flex;
-
 }
 
+
+
+/*------------
+    Side-Bar
+-------------*/
 .side-bar{
     height: calc(100vh - 90px);
     width: 50px;
-    background-color: black;
 }
 
+/*------------
+    Header
+-------------*/
 .subs{
     position: fixed;
     width: calc(100% - 50px);
     height: 90px;
     left: 50px;
     z-index: 10;
-    background-color: rgba(0, 62, 128, 0.613);
 }
 
+/*------------
+    Main
+-------------*/
 main{
     padding-top: 90px;
-    background-color: red;
     width: calc(100vw - 50px);
     height: calc(100vh - 90px);
     overflow-y: scroll;
 }
 
+/*-----------------
+    Footer/Player
+------------------*/
+
 footer{
     height: 90px;
-    background-color: grey;
 }

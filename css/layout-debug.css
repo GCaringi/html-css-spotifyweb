@@ -1,0 +1,19 @@
+/*-----------------
+    Debug Zone
+------------------*/
+
+.debug .side-bar{
+    background-color: burlywood;
+}
+
+.debug .subs{
+    background-color: rgba(0, 62, 128, 0.613)
+}
+
+.debug main{
+    background-color: red;
+}
+
+.debug footer{
+    background-color: grey;
+}
