@@ -13,10 +13,15 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
-    background-color: aqua;
+    background-color: #141922;
+    color: white;
 }
 .container{
     display: flex;
+}
+
+img{
+    width: 100%;
 }
 
 
@@ -25,19 +30,64 @@ body{
     Side-Bar
 -------------*/
 .side-bar{
-    height: calc(100vh - 90px);
+    background-color: #000000;
     width: 50px;
+    height: calc(100vh - 90px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
+
+.logo-xs{
+    margin-top: 3px;
+    width: 50%;
+}
+
+.logo{
+    display: none;
+}
+
+.side-bar-link, .side-bar-account{
+    text-align: center;
+}
+
+.side-bar-link img, .side-bar-account img{
+    width: 50%;
+}
+
+.side-bar-link-label{
+    display: none;
+}
+
+.side-bar-playlist{
+    display:unset;
+    flex-grow: 1;
+}
+
+
+.side-bar-profile{
+    height: 25px;
+    width: 25px;
+    background-color: grey;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+} 
 
 /*------------
     Header
 -------------*/
 .subs{
-    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
     width: calc(100% - 50px);
     height: 90px;
+
+    position: fixed;
     left: 50px;
     z-index: 10;
+
 }
 
 /*------------
@@ -55,5 +105,6 @@ main{
 ------------------*/
 
 footer{
+    background-color: #282828;
     height: 90px;
 }
