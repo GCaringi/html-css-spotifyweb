@@ -199,4 +199,36 @@ main{
 footer{
     background-color: #282828;
     height: 90px;
+    padding: 0px 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.now-playing, .control-bar, .output-bar, .now-playing >*{
+    display: flex;
+}
+
+.now-playing{
+    gap: 10px
+}
+
+.autore, .now-playing-icons{
+    flex-direction: column;
+}
+
+.now-playing-miniature{
+    display: flex;
+    width: 40px;
+    height: 40px;
+
+}
+
+.control-bar{
+    flex-wrap: wrap;
+}
+
+.control-bar >*{
+    width: 100%;
 }
