@@ -40,6 +40,31 @@ img{
     padding: 15px 45px;
 }
 
+.btn-add{
+    width: 37px;
+    height: 37px;
+    background-color: #a3a3a3;
+    margin: 15px 10px 10px 0px;
+    color: #141922;
+}
+
+.btn.btn-download{
+    margin: 10px 0px;
+} 
+
+.btn.btn-account{
+    padding: 10px 0px;
+}
+
+/*------------
+    Typo
+-------------*/
+h3{
+    text-transform: uppercase;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+}
 
 /*------------
     Header
@@ -65,7 +90,7 @@ header{
 -------------*/
 main{
     display: flex;
-    width: calc(100% - 50px);
+    width: 100%;
     height: calc(100vh - 90px);
 }
 
@@ -92,12 +117,12 @@ main{
     display: none;
 }
 
-.side-bar-link, .side-bar-account{
+.side-bar-account{
     text-align: center;
 }
 
-.side-bar-account img{
-    width: 50%;
+.side-bar img{
+    width: 100%;
 }
 
 .side-bar-link ul li{
@@ -105,8 +130,13 @@ main{
     padding: 5px 0px;
 }
 
+.side-bar-link ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .side-bar-icon{
-    width: 50%;
+    width: 25px;
     fill: #717171
 }
 
@@ -119,8 +149,12 @@ main{
 }
 
 .side-bar-icon.icon-download{
-    width: 25%;
-    margin: 5px 37.5%;
+    width: 20px;
+    vertical-align: middle;
+}
+
+.download-laber{
+    vertical-align: middle;
 }
 
 .side-bar-label{
@@ -128,12 +162,24 @@ main{
 }
 
 .side-bar-playlist{
-    display:unset;
     flex-grow: 1;
+    overflow-y: auto;
+    padding-top: 10px;
+    padding-right: 70px;
+}
+
+.side-bar-playlist ul li{
+    margin-bottom: 15px;
+    list-style: none;
+}
+
+.side-bar-playlist ul li a{
+    text-decoration: none;
+    color: inherit;
 }
 
 .side-bar-playlist-items{
-    display: none;
+    display: none;    
 }
 
 .side-bar-botton-container{

@@ -18,6 +18,7 @@
         <!-- Css Link -->
         <link rel="stylesheet" href="./css/layout-debug.css">
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/media-query.css">
         <!-- /Css Link -->
         <title>Spotify Web</title>
     </head>
@@ -63,7 +64,7 @@
                             <li>
                                 <a href="#">
                                     <svg class = "side-bar-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z"/></svg>
-                                    <span class = "side-bar-label">Libreria</span>
+                                    <span class = "side-bar-label">La tua libreria</span>
                                 </a>
                             </li>
                         </ul>
@@ -73,15 +74,18 @@
                     <!-- Playlists -->
                     <div class="side-bar-playlist">
                         <div class="side-bar-playlist-items">
+                            <h3>Playlist</h3>
+                            <button class="btn btn-add">
+                                <i class="fa-solid fa-plus"></i>
+                            </button><span>Crea Playlist</span>
                             <ul>
-                                <li>Albero</li>
-                                <li>Albero</li>
-                                <li>Albero</li>
-                                <li>Albero</li>
-                                <li>Albero</li>
-                                <li>Albero</li>
-                                <li>Albero</li>
-                                <li>Albero</li>
+                                <li><a href="#">Nome playlist</a></li>
+                                <li><a href="#">Nome playlist</a></li>
+                                <li><a href="#">Nome playlist</a></li>
+                                <li><a href="#">Nome playlist</a></li>
+                                <li><a href="#">Nome playlist</a></li>
+                                <li><a href="#">Nome playlist</a></li>
+                                <li><a href="#">Nome playlist</a></li>
                             </ul>
                         </div>
                     </div>
@@ -89,11 +93,15 @@
 
                     <!-- Login -->
                     <div class="side-bar-account">
-                        <button class = "btn">
-                            <svg class = "side-bar-icon icon-download" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Download icon</title><path d="M12 11.657V6h-1v5.65L9.076 9.414l-.758.65 3.183 3.702 3.195-3.7-.758-.653L12 11.657zM11.5 2C7.358 2 4 5.358 4 9.5c0 4.142 3.358 7.5 7.5 7.5 4.142 0 7.5-3.358 7.5-7.5C19 5.358 15.642 2 11.5 2zm0 14C7.916 16 5 13.084 5 9.5S7.916 3 11.5 3 18 5.916 18 9.5 15.084 16 11.5 16z"></svg>
-                        </button>
-                        <button class="btn" >
+                        <div class="side-bar-download">
+                            <button class = "btn btn-download">
+                                <svg class = "side-bar-icon icon-download" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Download icon</title><path d="M12 11.657V6h-1v5.65L9.076 9.414l-.758.65 3.183 3.702 3.195-3.7-.758-.653L12 11.657zM11.5 2C7.358 2 4 5.358 4 9.5c0 4.142 3.358 7.5 7.5 7.5 4.142 0 7.5-3.358 7.5-7.5C19 5.358 15.642 2 11.5 2zm0 14C7.916 16 5 13.084 5 9.5S7.916 3 11.5 3 18 5.916 18 9.5 15.084 16 11.5 16z"></svg>
+                                <span class = "side-bar-label download-label"><small>Installa App</small></span>
+                            </button>
+                        </div>
+                        <button class="btn btn-account" >
                             <div class = "side-bar-botton-container"></div>
+                            <span class = "side-bar-label">John Doe</span>
                         </button>
                     </div>
                     <!-- /Login -->

@@ -1,0 +1,57 @@
+@media screen and (min-width: 600px){
+
+
+/*------------
+    Header
+-------------*/
+
+    header{
+        width: calc(100% - 230px);
+    }
+
+/*------------
+    Main
+-------------*/
+/*------------
+    Side-Bar
+-------------*/
+    
+    .side-bar{
+        width: 230px;
+        align-items:baseline;
+        padding-left: 10px;
+    }
+
+    .side-bar-account{
+        text-align: left;
+    }
+
+    .logo-xs{
+        display: none;
+    }
+
+    .logo{
+        display: flex;
+        height: 90px;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 70px 20px 0px ;
+    }
+
+    .side-bar-label{
+        display: inline;
+        font-weight: 500;
+    }
+
+    .side-bar-icon{
+        padding-right: 5px;
+    }
+    .side-bar-playlist-items{
+        display: inline-block;
+    }
+
+    .side-bar-download{
+        width: 200px;
+        border-bottom: 1px solid grey;
+    }
+}
