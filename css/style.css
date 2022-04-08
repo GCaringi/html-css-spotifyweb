@@ -223,6 +223,23 @@ main{
     color: inherit;
 }
 
+.nav-categories ul li{
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.nav-categories ul li a::after{
+    content: "";
+    width: 50%;
+    height: 2px;
+    background-color: lightgreen;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
 .gallery{
     display: flex;
     flex-wrap: wrap;
@@ -343,7 +360,7 @@ footer{
     position: absolute;
     width: 8px;
     height: 8px;
-    background-color: green;
+    background-color: white;
     border-radius: 50%;
     right: 0px;
     top: 0px;
@@ -377,5 +394,26 @@ footer{
     background-color: #5a5a5a;
 }
 
+/*----------
+     Effcts
+ -----------*/
 
+.item-nav:hover .status-nav-point{
+    opacity: 1;
+}
 
+.item-nav:hover .status-nav{
+    background-color: rgb(87, 227, 87);
+}
+
+.info-author:hover {
+    text-decoration: underline;
+}
+
+.now-playing-icons .btn:hover{
+    color: white;
+}
+
+.nav-categories ul li a:hover::after{
+    opacity: 1;
+}
