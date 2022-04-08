@@ -1,3 +1,17 @@
+/* Media quesry bonus */
+
+@media screen and (max-width: 500px){
+    
+    .recent-playlist-item{
+        width: calc((100% / 1) - 5px);
+    }
+}
+
+
+
+
+
+
 @media screen and (min-width: 600px){
 
 
@@ -124,6 +138,9 @@
         background-color: #5a5a5a;
     }
 
+    .recent-playlist-item{
+        width: calc((100% / 4) - 10px);
+    }
 }
 
 
@@ -148,5 +165,9 @@
         width: 100px;
         height: 5px;
         background-color: #5a5a5a;
+    }
+
+    .recent-playlist-item{
+        width: calc((100% / 6) - 10px);
     }
 }
