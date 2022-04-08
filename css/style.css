@@ -223,17 +223,20 @@ main{
     color: inherit;
 }
 
-.recent-playlist{
+.gallery{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     margin-top: 5px;
 }
 
-.recent-playlist-item{
+.gallery-item{
     width: calc((100% / 2) - 5px);
 }
 
+.miniature-radius img{
+    border-radius: 50%;
+}
 
 
 /*-----------------
