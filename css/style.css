@@ -21,6 +21,12 @@ img{
     width: 100%;
 }
 
+.container{
+    width: calc(100% - 50px);
+    padding: 0px 20px;
+    padding-top: 110px;
+}
+
 /*------------
     Buttons
 -------------*/
@@ -195,6 +201,24 @@ main{
     Main Section/Music Gallery
 ------------------------------*/
 
+.nav-categories ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.nav-categories ul li a {
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
 
 
 
