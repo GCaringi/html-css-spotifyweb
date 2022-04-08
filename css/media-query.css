@@ -2,7 +2,7 @@
 
 @media screen and (max-width: 500px){
     
-    .recent-playlist-item{
+    .gallery-item{
         width: calc((100% / 1) - 5px);
     }
 }
@@ -138,7 +138,7 @@
         background-color: #5a5a5a;
     }
 
-    .recent-playlist-item{
+    .gallery-item{
         width: calc((100% / 4) - 10px);
     }
 }
