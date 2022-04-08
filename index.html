@@ -96,7 +96,7 @@
                         <div class="side-bar-download">
                             <button class = "btn btn-download">
                                 <svg class = "side-bar-icon icon-download" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Download icon</title><path d="M12 11.657V6h-1v5.65L9.076 9.414l-.758.65 3.183 3.702 3.195-3.7-.758-.653L12 11.657zM11.5 2C7.358 2 4 5.358 4 9.5c0 4.142 3.358 7.5 7.5 7.5 4.142 0 7.5-3.358 7.5-7.5C19 5.358 15.642 2 11.5 2zm0 14C7.916 16 5 13.084 5 9.5S7.916 3 11.5 3 18 5.916 18 9.5 15.084 16 11.5 16z"></svg>
-                                <span class = "side-bar-label download-label"><small>Installa App</small></span>
+                                <span class = "side-bar-label"><small>Installa App</small></span>
                             </button>
                         </div>
                         <button class="btn btn-account" >
@@ -116,38 +116,71 @@
       <footer>
           <div class="now-playing">
             <div class="now-playing-miniature">
-                <img src="./img/stranger.jpeg" alt="">
+                <img src="./img/sinister.jpeg" alt="">
             </div> 
-                <div class="autore">
-                    <strong>Sinister</strong>
-                    <small>brano nome</small>
+                <div class="now-playing-info">
+                    <div class="info-song-name">
+                        Sinister
+                    </div>
+                    <div class="info-author">
+                        Brano nome
+                    </div>
                 </div>
                 <div class="now-playing-icons">
-                    <i class="fa-solid fa-heart"></i>
-                    <i class="fa-solid fa-folder"></i>
+                    <buttton class="btn">
+                        <i class="fa-solid fa-heart"></i>
+                    </buttton>
+                    <button class="btn">
+                        <i class="fa-solid fa-folder"></i>
+                    </button>
                 </div>
             
           </div>
 
           <div class="control-bar">
             <div class="control-bar-btn">
-                <i class="fa-solid fa-shuffle"></i>
-                <i class="fa-solid fa-backward-step"></i>
-                <i class="fa-solid fa-circle-play"></i>
-                <i class="fa-solid fa-forward-step"></i>
-                <i class="fa-solid fa-rotate-right"></i>
+                <button class = "btn">
+                    <i class="fa-solid fa-shuffle xs-hide"></i>
+                </button>
+                <button class="btn">
+                    <i class="fa-solid fa-backward-step"></i>
+                </button>
+                <button class="btn">
+                    <i class="fa-solid fa-circle-play control-bar-play"></i>
+                </button>
+                <button class="btn">
+                    <i class="fa-solid fa-forward-step"></i>
+                </button>
+                <button class= "btn">
+                    <i class="fa-solid fa-rotate-right xs-hide"></i>
+                </button>
             </div>
             <div class="control-bar-nav">
-                <i class="fa-solid fa-circle-play"></i>
+                <span class="time">2:34</span>
+                <div class="item-nav">
+                    <div class="status-nav">
+                        <div class="status-nav-point"></div>
+                    </div>
+                </div>
+                <span class="time">4:53</span>
             </div>
           </div>
 
-          <div class="output bar">
-            <i class="fa-solid fa-shuffle"></i>
-            <i class="fa-solid fa-backward-step"></i>
-            <i class="fa-solid fa-circle-play"></i>
-            <i class="fa-solid fa-forward-step"></i>
-            <i class="fa-solid fa-rotate-right"></i>
+          <div class="output-bar">
+                <button class="btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <button class="btn">
+                    <i class="fa-solid fa-tv"></i>
+                </button>
+                <button class="btn">
+                    <i class="fa-solid fa-volume-high"></i>      
+                </button>
+                <div class="item-nav">
+                    <div class="status-nav">
+                        <div class="status-nav-point"></div>
+                    </div>
+                </div>
           </div>
       </footer>
     </body>
