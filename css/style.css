@@ -116,6 +116,8 @@ main{
     flex-direction: column;
     align-items: center;
     gap: 10px;
+
+    overflow: hidden;
 }
 
 .logo-xs{
@@ -202,6 +204,14 @@ main{
     Main Section/Music Gallery
 ------------------------------*/
 
+section{
+    margin: 40px 0px;
+}
+
+section img{
+    display: block;
+}
+
 .nav-categories ul{
     display: flex;
     justify-content: center;
@@ -249,12 +259,62 @@ main{
 
 .gallery-item{
     width: calc((100% / 2) - 5px);
+    text-align: center;
 }
+
+.container h2{
+    color: white;
+}
+
+.miniature{
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+
 
 .miniature-radius img{
     border-radius: 50%;
 }
 
+.miniature::after{
+    content: "\f144";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+
+.miniature.miniature-radius::after{
+    content: "\f144";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
 
 /*-----------------
     Footer/Player
@@ -416,4 +476,20 @@ footer{
 
 .nav-categories ul li a:hover::after{
     opacity: 1;
+}
+
+.gallery-item:hover .miniature::after{
+    opacity: 1;
+}
+
+.side-bar button:hover{
+    color: white;
+}
+
+.side-bar a:hover, .side-bar span:hover{
+    color: white;
+}
+
+.side-bar a:hover .side-bar-icon{
+    fill: white;
 }
